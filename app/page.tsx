@@ -5,12 +5,15 @@ import POS from "./components/POS";
 import Stamps from "./components/Stamps";
 import Analytics from "./components/Analytics";
 import Contact from "./components/Contact";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 export default function Home() {
   return (
     <main>
-      <div className="overflow-hidden">
+      <Header />
+      <div className="overflow-hidden">  
         <Hero />
         <Features />
         <POS />
@@ -19,6 +22,7 @@ export default function Home() {
         <Analytics />
         <Contact />
       </div>
+      <Footer />
     </main>
   );
 }
