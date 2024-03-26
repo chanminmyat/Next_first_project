@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        bg_img: "url('../public/assets/img/hero/pos-illustration-header.png')",
+      },
+      colors: {
+        "light-blue": "#29ACE3",
+        "dark-blue": "#2b376e",
       },
     },
   },

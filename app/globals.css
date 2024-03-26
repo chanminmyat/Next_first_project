@@ -2,32 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.cat__img{
+    @apply w-[100%] max-w-[47px] min-w-[40px] lg:mx-[30px] mx-0 lg:mb-0 mb-2
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.cat__cap{
+    @apply text-[#2b376e] md:text-2xl text-lg font-extrabold hover:no-underline hover:text-white
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cat__text{
+    @apply md:text-lg text-base text-white mb-[5px]
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.about__text{
+    @apply md:text-lg text-base text-[#5e5e5e] mb-[5px]
+}
+
+.features{
+    @apply max-w-[500px] md:mb-[100px] mb-5
+}
+
+.about__icon{
+    @apply max-w-[81px] max-h-[86px] mb-[35px]
+}
+
+.icon__holder{
+    @apply max-w-[20px] max-h-[100px] bg-center pb-3
+}
+
+.caption{
+    @apply font-extrabold mb-3 text-4xl
+}
+
+.caption__underline{
+    @apply h-0.5 w-12 bg-[#29ACE3] flex justify-center mb-8
+}
+
+.underline{
+    @apply h-0.5 bg-[#c2c2c2] flex justify-center mt-3
+}
+
+.custom__container{
+    @apply lg:w-[1000px] md:w-[750px] sm:w-[600px] w-[400px]
+}
+
+.text__container{
+    @apply lg:w-[900px] md:w-[650px] sm:w-[500px] w-[350px]
+}
+
+.form__input{
+    @apply w-full px-3 py-2 border-[1px] border-[#cdcdcd] outline-none focus:border-2 focus:border-[#29ACE3] rounded-md
+}
+
+.form{
+    @apply border-[1px] sm:w-[500px] w-[400px] lg:ml-[200px] mx-auto bg-white shadow-xl shadow-[#dcdcdc] pt-[50px] pb-[50px] px-[20px] rounded-lg
+}
+
+.form__label{
+    @apply text-black
+}
+
+.form__btn{
+    @apply bg-[#29ACE3] px-10 py-3 rounded-full text-[#ffffff] cursor-pointer font-bold hover:text-[#2b376e]
+}
+
+.step__icon{
+    @apply h-[50px] w-[50px] flex justify-center items-center rounded-full
+}
+
+.step__text{
+    @apply text-[13px] font-extrabold
+}
+
+.text__container p{
+    @apply text-[#5e5e5e] text-base mb-4
+}
+
+.text__container h3{
+    @apply text-[#2b376e] text-base font-bold
 }

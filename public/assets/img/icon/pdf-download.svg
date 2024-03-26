@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 149 153" style="enable-background:new 0 0 149 153;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#29AAE1;}
+	.st1{fill:none;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:url(#SVGID_00000141455484449414134260000007478488424656958649_);}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'Arial-Black';}
+	.st6{font-size:24.1728px;}
+</style>
+<g>
+	<path class="st0" d="M61.34,75.84H6.19c-3.5,0-6.33-2.83-6.33-6.33v-28.9c0-3.5,2.83-6.33,6.33-6.33h55.15
+		c3.5,0,6.33,2.83,6.33,6.33v28.9C67.67,73.01,64.84,75.84,61.34,75.84z"/>
+	<path class="st0" d="M127.5,127.18h-24.26c-2.93,0-5.3-2.37-5.3-5.3V84.78c0-2.93,2.37-5.3,5.3-5.3h24.26c2.93,0,5.3,2.37,5.3,5.3
+		v37.09C132.8,124.81,130.43,127.18,127.5,127.18z"/>
+	<polygon class="st0" points="149.23,119.13 115.37,153 81.51,119.13 	"/>
+	<g>
+		<path class="st1" d="M97.02,45.23h18.72L86.06,14.81v19.58C86.06,40.36,90.98,45.23,97.02,45.23z"/>
+		<g>
+			<polygon class="st1" points="124.38,45.23 115.74,45.23 120.77,50.39 120.77,54.33 124.38,54.33 			"/>
+			<polygon class="st1" points="86.06,14.81 86.06,5.83 76.95,5.83 76.95,9.14 80.53,9.14 			"/>
+			<path class="st1" d="M97.02,45.23h18.72L86.06,14.81v19.58C86.06,40.36,90.98,45.23,97.02,45.23z"/>
+		</g>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13.3143" y1="111.3325" x2="94.87" y2="111.3325">
+				<stop  offset="0" style="stop-color:#0A0A37"/>
+				<stop  offset="1" style="stop-color:#1D204E"/>
+			</linearGradient>
+			<path class="st2" d="M33.39,132.59c-6.05,0-10.96-4.86-10.96-10.84V80.97h-9.11v40.78c0,11,9,19.94,20.07,19.94h61.48l-9.11-9.11
+				H33.39z"/>
+
+				<linearGradient id="SVGID_00000129168367956862262140000001247238594503803045_" gradientUnits="userSpaceOnUse" x1="13.3143" y1="37.4602" x2="129.8812" y2="37.4602">
+				<stop  offset="0" style="stop-color:#0A0A37"/>
+				<stop  offset="1" style="stop-color:#1D204E"/>
+			</linearGradient>
+			<path style="fill:url(#SVGID_00000129168367956862262140000001247238594503803045_);" d="M84.37,0.03H33.39
+				c-11.07,0-20.07,8.95-20.07,19.94V30.1h9.11V19.98c0-5.98,4.92-10.84,10.96-10.84h43.57v25.25c0,11,9,19.94,20.07,19.94h23.75
+				v20.55h9.11v-28.2L84.37,0.03z M97.02,45.23c-6.05,0-10.96-4.86-10.96-10.84V14.81l29.68,30.42H97.02z"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 8.2366 63.3314)" class="st4 st5 st6">PDF</text>
+</g>
+</svg>
