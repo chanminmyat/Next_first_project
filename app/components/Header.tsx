@@ -39,7 +39,7 @@ const Header = () => {
             <nav className={`lg:static absolute flex-col lg:flex-row lg:bg-transparent bg-[#0A0A37] gap-8 justify-center lg:min-h-fit min-h-[40vh] left-0 ${isClick? 'top-[-1000px]':'top-[100px] t'} z-30 lg:w-auto w-full flex px-5`}>
                 <ul className='flex lg:flex-row flex-col items-center lg:gap-7 gap-8'>
                     {NAV_LINKS.map((link)=>(
-                        <Link className='group hover:text-gray-100 text-light-blue transition-all duration-300 ease-in-out' href={link.href} key={link.key}>
+                        <Link className='group hover:text-gray-100 text-light-blue transition-all duration-300 ease-in-out' href={link.href} key={link.key} onClick={toggleMenu}>
                             <span className='flex gap-1 pb-1 bg-left-bottom bg-gradient-to-r from-gray-100 to-gray-100 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out'>
                                 <Image src={link.icon} alt={'icon'} width={20} height={100} />
                                 <li className='font-extrabold'>{link.label}</li>
@@ -48,7 +48,7 @@ const Header = () => {
                     ))}    
                 </ul>  
                 <Link className='relative border-2 border-gray-100 text-light-blue px-[50px] py-[15px] ml-6 rounded-xl flex items-center justify-center overflow-hidden transition duration-300 ease out group'
-                href={'/register'}>
+                href={'/register'} onClick={toggleMenu}>
                     <span className='absolute flex items-center justify-center w-full h-full text-white font-bold duration-300 -translate-x-full bg-light-blue group-hover:translate-x-0 ease'>
                         GET STARTED
                     </span>
