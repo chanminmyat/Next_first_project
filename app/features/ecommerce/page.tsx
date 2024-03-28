@@ -19,7 +19,7 @@ export default function feature_Ecommerce() {
                 <span className='text-light-blue'> online solution.</span>
               </p>
             </div>
-            <div className="container md:grid grid-cols-3 gap-4 flex-col lg:px-[200px] px-0">
+            <div className="container md:grid grid-cols-3 gap-4 flex-col lg:px-[100px] md:px-[50px] px-2">
               {ecommerce.map((LINK)=>(
                 <div className="flex-col flex items-center" key={LINK.key}>
                 <div className="w-[100%] max-w-[100px] min-w-[40px] max-h-[90px] lg:mx-[30px] mx-0 lg:mb-0 mb-2">

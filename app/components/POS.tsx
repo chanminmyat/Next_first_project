@@ -17,7 +17,7 @@ const POS = () => {
           </p>
         </div>
         <div className='container flex md:flex-row flex-col gap-3 justify-around items-center'>
-          <div className='lg:w-[500px] w-[400px]'>
+          <div className='lg:w-[600px] w-[350px]'>
             {/* 3 paragraph mapping from index */}
             {about_pos.map((Link)=>(
             <div className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center" key={Link.key}>

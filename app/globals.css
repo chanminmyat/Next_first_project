@@ -43,11 +43,11 @@
 }
 
 .custom__container{
-    @apply lg:w-[1000px] md:w-[750px] sm:w-[600px] w-[400px]
+    @apply lg:w-[1000px] md:w-[750px] sm:w-[600px]
 }
 
 .text__container{
-    @apply lg:w-[900px] md:w-[650px] sm:w-[500px] w-[350px]
+    @apply lg:w-[900px] md:w-[650px] sm:w-[500px]
 }
 
 .form__input{
@@ -55,7 +55,7 @@
 }
 
 .form{
-    @apply border-[1px] sm:w-[500px] w-[400px] lg:ml-[200px] mx-auto bg-white shadow-xl shadow-[#dcdcdc] pt-[50px] pb-[50px] px-[20px] rounded-lg
+    @apply border-[1px] sm:w-[500px] lg:ml-[200px] mx-auto bg-white shadow-xl shadow-[#dcdcdc] pt-[50px] pb-[50px] px-[20px] rounded-lg
 }
 
 .form__label{

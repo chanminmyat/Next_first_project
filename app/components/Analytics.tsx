@@ -7,7 +7,7 @@ const Analytics = () => {
         <div className='flex flex-col items-center'> 
           <img className='icon__holder' src="/assets/img/elements/dash.svg" alt="" />
           <img className='about__icon' src="/assets/img/icon/analytics.svg" />
-          <h2 className="caption text-dark-blue">Analytics & Marketing</h2>
+          <h2 className="caption text-dark-blue text-center">Analytics & Marketing</h2>
           <span className="caption__underline"></span>
           <p className='text-[#5e5e5e] text-[20px] text-center mb-[40px]'>
             Get data about your store’s transactions, shoppers’ purchasing patterns, sales, and insights, anytime, anywhere,
@@ -15,7 +15,7 @@ const Analytics = () => {
           </p>
         </div>
         <div className='container flex md:flex-row-reverse flex-col gap-3 justify-around items-center'>
-          <div className='lg:w-[600px] w-[400px]'>
+          <div className='lg:w-[600px] w-[350px]'>
             {/* 1st para */}
             <div className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center">
               <div className="cat__img">

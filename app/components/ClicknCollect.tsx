@@ -15,7 +15,7 @@ const ClicknCollect = () => {
           </p>
         </div>
         <div className='container flex md:flex-row-reverse flex-col gap-3 justify-around items-center'>
-          <div className='max-w-[100%] lg:w-[600px] w-[400px]'>
+          <div className='lg:w-[600px] w-[350px]'>
             {/* 3 paragraph mapping from index */}
             {about_cNc.map((Link)=>(
             <div className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center" key={Link.key}>

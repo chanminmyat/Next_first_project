@@ -5,7 +5,7 @@ export default function feature_Pos() {
       <main>
         <div className="relative bg-gradient-to-b from-[#0A0A37] to-[#1D204E] overflow-hidden">
           <div className=" flex lg:flex-row flex-col items-center justify-around">
-            <h2 className="w-1/2 text-white md:mb-[100px] mb-[50px] text-center font-bold md:text-5xl text-3xl">LINK System</h2>
+            <h2 className="w-1/2 text-white md:mb-[100px] mb-[50px] text-center font-bold md:text-5xl text-3xl">POS System</h2>
             <img className="z-10 w-1/2" src="/assets/img/gallery/pos-visual.png" alt="" />
           </div>
           <div className='w-[110%] mb-[-1px] mr-[0px] ml-[-5px] lg:mt-[-200px] md:mt-[-100px] mt-[-50px]'>
@@ -19,7 +19,7 @@ export default function feature_Pos() {
                 <span className='text-light-blue'> one single tool.</span>
               </p>
             </div>
-            <div className="container md:grid grid-cols-3 gap-4 flex-col lg:px-[200px] px-0">
+            <div className="container md:grid grid-cols-3 gap-4 flex-col lg:px-[100px] md:px-[50px] px-2">
               {pos.map((LINK)=>(
                 <div className="flex-col flex items-center" key={LINK.key}>
                 <div className="w-[100%] max-w-[100px] min-w-[40px] max-h-[90px] lg:mx-[30px] mx-0 lg:mb-0 mb-2">

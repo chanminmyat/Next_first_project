@@ -10,7 +10,7 @@ const Hero = () => {
                 initial={{x:-200, opacity:0}}
                 animate={{x:0, opacity:1}}
                 transition={{duration:0.5, ease:'easeInOut'}} 
-                className='flex flex-col lg:pt-36 lg:pb-[80px]'>
+                className='flex flex-col lg:pt-36 lg:pb-[80px] px-4 lg:px-0 sm:items-start sm:text-start items-center text-center'>
                 <div>
                     <span className='inline-block text-light-blue text-2xl font-bold'>Convenience in one click</span>
                     <h1 className='text-white 2xl:text-[72px] lg:text-[65px] text-[50px] font-extrabold mb-[12px]'>Every Retailer Tool Suite</h1>
