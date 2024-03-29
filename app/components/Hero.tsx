@@ -5,7 +5,7 @@ import Link from "next/link"
 const Hero = () => {
   return (
     <div id='home' className='bg-gradient-to-b from-[#0A0A37] to-[#1D204E] flex-col flex items-center'>
-        <div className='custom__container flex md:flex-row flex-col gap-5'>
+        <div className='custom__container flex md:flex-row flex-col gap-5 sm:px-0 px-5'>
             <motion.div
                 initial={{x:-200, opacity:0}}
                 animate={{x:0, opacity:1}}
