@@ -36,7 +36,7 @@ const Stamps = () => {
           </div>
           <div className='w-1/2 flex-col flex items-center'>
             <img src="/assets/img/gallery/stamps-visual.png" alt="" />
-            <Link className='bg-light-blue px-[50px] py-[15px] rounded-full text-white font-bold hover:no-underline hover:text-dark-blue' href="/features/loyalty" >
+            <Link className='bg-light-blue w-[150px] h-[60px] rounded-full text-white font-bold hover:no-underline hover:text-dark-blue flex items-center justify-center' href="/features/loyalty" >
               Read More
             </Link>
           </div>

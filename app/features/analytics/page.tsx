@@ -4,8 +4,8 @@ export default function feature_Analytics() {
     return (
       <main>
         <div className="relative bg-gradient-to-b from-[#0A0A37] to-[#1D204E] overflow-hidden">
-          <div className=" flex xl:flex-row flex-col items-center justify-around">
-            <h2 className="w-1/2 text-white md:mb-[100px] mb-[50px] text-center font-bold md:text-5xl text-3xl">Analytics & Marketing</h2>
+          <div className=" flex lg:flex-row flex-col items-center justify-around">
+            <h2 className="w-1/2 text-white lg:mb-[150px] md:mb-[100px] mb-[50px] text-center font-bold md:text-5xl text-3xl">Analytics & Marketing</h2>
             <img className="z-10 w-1/2" src="/assets/img/gallery/analytics-visual.png" alt="" />
           </div>
           <div className='w-[110%] mb-[-1px] mr-[0px] ml-[-5px] lg:mt-[-200px] md:mt-[-100px] mt-[-50px]'>

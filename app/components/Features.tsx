@@ -4,7 +4,7 @@ const Features = () => {
       {/* max container */}
       <div className="max-container bg-gradient-to-r from-[#FFFFFF] to-[D9D9D9]">
         <div className="flex flex-col items-center">
-          <h2 className="caption text-dark-blue">Our Unique Features</h2>
+          <h2 className="caption text-dark-blue text-center">Our Unique Features</h2>
           <span className="h-0.5 w-12 bg-light-blue flex justify-center mb-8"></span>
         </div>
         {/* blue container */}
