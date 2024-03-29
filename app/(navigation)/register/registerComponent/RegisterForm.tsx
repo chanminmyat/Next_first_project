@@ -1,6 +1,6 @@
 import { useStore } from "@/app/store/stripeStore";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 const RegisterForm = () => {
   const { email, setEmail, businessName, setBusinessName, password, setPassword, count, setCount } = useStore();
@@ -8,12 +8,27 @@ const RegisterForm = () => {
   const [msg, setMsg] = useState("");
   const [error,setError] = useState("");
   const [confirmPsw, setConfirmPsw] = useState("");
+  const emailRef = useRef<HTMLInputElement>(null)
+  const passwordRef = useRef<HTMLInputElement>(null)
+  const confirmPassRef = useRef<HTMLInputElement>(null)
   const {
     register,
     handleSubmit,
     formState: { errors },
-    watch,
+    setFocus,
   } = useForm({ mode: "onSubmit" });
+
+  const handleKeyDown = (e:any) => {
+    if(e.key === 'Enter'){
+      console.log(e.currentTarget.id)
+      e.preventDefault()
+      switch(e.currentTarget.id) {
+        case 'name' : setFocus("email");break
+        case 'email': setFocus("password");break
+        case 'password' : confirmPassRef.current?.focus()
+      }
+    }
+  }
 
   const handleNext = async () => {
     if(password === confirmPsw){
@@ -64,6 +79,8 @@ const RegisterForm = () => {
             },
           })}
           placeholder="Your Business Name"
+          autoFocus
+          onKeyDown={handleKeyDown}
         />
         {errors.name && (
           <p className="text-red-500">Business Name is Required.</p>
@@ -86,6 +103,7 @@ const RegisterForm = () => {
             pattern: /^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
           })}
           placeholder="your-email@something.com"
+          onKeyDown={handleKeyDown}
         />
         {errors.email?.type === "required" && (
           <p className="text-red-500">Email is Required.</p>
@@ -110,6 +128,7 @@ const RegisterForm = () => {
             },
             pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$/,
           })}
+          onKeyDown={handleKeyDown}
         />
         {errors.password?.type === "required" && (
           <p className="text-red-500">Password is Required.</p>
@@ -131,6 +150,8 @@ const RegisterForm = () => {
           id="confirmPassword"
           value={confirmPsw}
           onChange={e=>setConfirmPsw(e.target.value)}
+          ref={confirmPassRef}
+          onFocus={handleKeyDown}
           // {...register("confirmPassword", {
           //   validate: (value) => value === watch("password"),
           // })}

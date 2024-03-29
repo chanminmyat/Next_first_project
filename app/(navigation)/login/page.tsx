@@ -2,38 +2,40 @@
 
 import { useRef, useState } from "react";
 export default function login() {
-  const [email,setEmail] = useState("")
-  const [psw, setPsw] = useState("")
-  const [msg, setMsg] = useState("")
-  const passwordRef = useRef<HTMLInputElement>(null)
+  const [email, setEmail] = useState("");
+  const [psw, setPsw] = useState("");
+  const [msg, setMsg] = useState("");
+  const passwordRef = useRef<HTMLInputElement>(null);
 
-  const handleKeyDown = (e:any) => {
-    if(e.key === 'Enter'){
-      e.preventDefault()
-      passwordRef.current?.focus()
+  const handleKeyDown = (e: any) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      passwordRef.current?.focus();
     }
-  }
+  };
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const res = await fetch(`${process.env.NEXT_PUBLIC_PLATFORM_NESTJS_URL}/pos/auth/pos-login`,{
-      method:'POST',
-      headers:{
-        'Content-Type': 'application/json'
-      },
-      body:JSON.stringify({
-        email:email,
-        password:psw,
-      })
-    })
-    console.log(res.json())
-    if(res.status==200){
-      //window.location.href = "http://localhost:3000/"  
-      setMsg("Login Complete")
-    }
-    else{
-      setMsg("Please enter valid Email and Password")
-      setPsw("")
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_PLATFORM_NESTJS_URL}/pos/auth/pos-login`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          password: psw,
+        }),
+      }
+    );
+    console.log(res.json());
+    if (res.status == 200) {
+      //window.location.href = "http://localhost:3000/"
+      setMsg("Login Complete");
+    } else {
+      setMsg("Please enter valid Email and Password");
+      setPsw("");
     }
   };
 
@@ -58,25 +60,27 @@ export default function login() {
                   <label className="form__label" htmlFor="email">
                     Email
                   </label>
-                  <input 
-                    value={email} 
-                    onChange={e=>setEmail(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                    className="form__input"  
+                  <input
+                    className="form__input"
                     type="email"
-                    name="email" />
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                    autoFocus
+                  />
                 </div>
                 <div className="mb-4">
                   <label className="form__label" htmlFor="password">
                     Password
                   </label>
                   <input
-                    value={psw}
-                    onChange={e=>setPsw(e.target.value)}
                     className="form__input"
-                    ref={passwordRef}
                     type="password"
                     name="password"
+                    value={psw}
+                    ref={passwordRef}
+                    onChange={(e) => setPsw(e.target.value)}
                   />
                 </div>
                 <div className="flex items-center mb-4">
@@ -85,9 +89,7 @@ export default function login() {
                     Remember Me
                   </label>
                 </div>
-                <div className="text-red-500">
-                  {msg && <div>{msg}</div>}
-                </div>
+                <div className="text-red-500">{msg && <div>{msg}</div>}</div>
                 <div className="mx-auto flex items-center justify-center">
                   <input type="submit" className="form__btn" value="Login" />
                 </div>
