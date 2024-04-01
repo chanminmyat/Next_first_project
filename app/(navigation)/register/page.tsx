@@ -13,11 +13,12 @@ import axios from "axios";
 import { useStore } from "@/app/store/stripeStore";
 import RegisterForm from "./registerComponent/RegisterForm";
 import StripeCheckoutForm from "./registerComponent/StripeCheckoutForm";
+import Image from "next/image";
 
 const stripePromise = loadStripe(`${process.env.NEXT_PUBLIC_STRIPE_PUB_KEY}`);
 
 export default function register() {
-  const { count, email, name } = useStore();
+  const { count } = useStore();
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
@@ -44,9 +45,12 @@ export default function register() {
     <main>
       <div className="relative bg-gradient-to-b from-[#0A0A37] to-[#1D204E] lg:pt-[200px] pt-[100px] overflow-hidden">
         <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px] lg:mt-[-200px] md:mt-[-100px] mt-[-50px]">
-          <img
+          <Image
+            width={100}
+            height={100}
             className="w-[110%] h-auto"
             src="/assets/img/elements/triangle-white.svg"
+            alt={""}
           />
         </div>
         <div className="bg-white">
@@ -115,9 +119,12 @@ export default function register() {
             </div>
           </div>
           <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px] mt-[-130px] z-0">
-            <img
+            <Image
+              width={100}
+              height={100}
               className="w-[110%] h-auto"
               src="/assets/img/elements/triangle-dark-blue.svg"
+              alt={""}
             />
           </div>
         </div>

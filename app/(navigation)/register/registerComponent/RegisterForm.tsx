@@ -8,8 +8,6 @@ const RegisterForm = () => {
   const [msg, setMsg] = useState("");
   const [error,setError] = useState("");
   const [confirmPsw, setConfirmPsw] = useState("");
-  const emailRef = useRef<HTMLInputElement>(null)
-  const passwordRef = useRef<HTMLInputElement>(null)
   const confirmPassRef = useRef<HTMLInputElement>(null)
   const {
     register,

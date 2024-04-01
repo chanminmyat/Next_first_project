@@ -1,4 +1,5 @@
 import { help } from "@/app/constants/feature";
+import Image from "next/image";
 
 export default function Help() {
   return (
@@ -10,9 +11,12 @@ export default function Help() {
           </h2>
         </div>
         <div className="absolutew-[110%] mb-[-1px] mr-[0px] ml-[-5px] lg:mt-[-200px] md:mt-[-100px] mt-[-50px]">
-          <img
+          <Image
+            width={100}
+            height={100}
             className="w-[110%] h-auto"
             src="/assets/img/elements/triangle-white.svg"
+            alt={""}
           />
         </div>
         <div className=" bg-white flex flex-col items-center">
@@ -35,13 +39,18 @@ export default function Help() {
             ))}
           </div>
           <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px]">
-            <img
+            <Image
+              width={100}
+              height={100}
               className="w-[110%] h-auto"
               src="/assets/img/elements/triangle-white.png"
+              alt={""}
             />
           </div>
           <div className="w-[100%] bg-[#f2f5f6] flex-col flex items-center">
-            <img
+            <Image
+              width={100}
+              height={100}
               className="icon__holder pb-[50px]"
               src="/assets/img/elements/dash.svg"
               alt=""
@@ -51,16 +60,21 @@ export default function Help() {
                 User Guide
               </span>
               <br />
-              <img
+              <Image
+                width={100}
+                height={100}
                 className=""
                 src="/assets/img/icon/pdf-download.svg"
                 alt="download"
               />
             </a>
             <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px]">
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="w-[110%] h-auto"
                 src="/assets/img/elements/triangle-dark-blue.svg"
+                alt={""}
               />
             </div>
           </div>

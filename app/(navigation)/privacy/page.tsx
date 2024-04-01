@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 export default function privacy() {
     return (
       <main>
         <div className="relative bg-gradient-to-b from-[#0A0A37] to-[#1D204E] lg:pt-[200px] pt-[100px] overflow-hidden">
         
           <div className='w-[110%] mb-[-1px] mr-[0px] ml-[-5px] lg:mt-[-200px] md:mt-[-100px] mt-[-50px]'>
-            <img className='w-[110%] h-auto' src="/assets/img/elements/triangle-white.svg" />
+            <Image width={100} height={100} className='w-[110%] h-auto' src="/assets/img/elements/triangle-white.svg" alt={""} />
           </div>
           <div className="bg-white">
             <div className='flex flex-col items-center pt-[50px]'>
@@ -12,7 +14,7 @@ export default function privacy() {
                 <span className="caption__underline"></span>
             </div>
             <div className="border-[1px] custom__container  shadow-xl shadow-[#dcdcdc] mx-auto">
-                <div className='text__container mx-auto my-auto text-justify'>
+                <div className='text__container mx-auto my-auto text-justify px-2'>
                     <p className="pt-[50px]">
                     RingZero Networks (Thailand) Co., Ltd (hereinafter referred to as “DSLA”, “us“, “we” or “our”), a company
                     incorporated under the Laws of Thailand, is committed to maintaining robust privacy protections for its users,
@@ -159,7 +161,7 @@ export default function privacy() {
                 </div>  
             </div>
             <div className='w-[110%] mb-[-1px] mr-[0px] ml-[-5px]'>
-                <img className='w-[110%] h-auto' src="/assets/img/elements/triangle-dark-blue.svg" /> 
+                <Image width={100} height={100} className='w-[110%] h-auto' src="/assets/img/elements/triangle-dark-blue.svg" alt={""} /> 
             </div>
           </div>
         </div>
