@@ -10,7 +10,7 @@ export default function privacy() {
           </div>
           <div className="bg-white">
             <div className='flex flex-col items-center pt-[50px]'>
-                <h2 className="caption text-dark-blue">Privacy Policy</h2>
+                <h2 className="caption text-dark-blue text-center">Privacy Policy</h2>
                 <span className="caption__underline"></span>
             </div>
             <div className="border-[1px] custom__container  shadow-xl shadow-[#dcdcdc] mx-auto">

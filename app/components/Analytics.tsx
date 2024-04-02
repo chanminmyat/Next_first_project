@@ -34,7 +34,7 @@ const Analytics = () => {
           </p>
         </div>
         <div className="container flex md:flex-row-reverse flex-col gap-3 justify-around items-center">
-          <div className="lg:w-[600px] w-[350px]">
+          <div className="lg:w-[600px] sm:w-[350px]">
             {/* 1st para */}
             <div className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center">
               <div className="cat__img">

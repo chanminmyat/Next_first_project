@@ -15,7 +15,7 @@ export default function privacy() {
         </div>
         <div className="bg-white">
           <div className="flex flex-col items-center pt-[50px]">
-            <h2 className="caption text-dark-blue">Terms and Condition</h2>
+            <h2 className="caption text-dark-blue text-center">Terms and Condition</h2>
             <span className="caption__underline"></span>
           </div>
           <div className="custom__container border-[1px] shadow-xl shadow-[#dcdcdc] mx-auto">

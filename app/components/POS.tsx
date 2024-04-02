@@ -24,7 +24,7 @@ const POS = () => {
             src="/assets/img/icon/pos.svg"
             alt={""}
           />
-          <h2 className="caption text-white">POS Systems</h2>
+          <h2 className="caption text-white text-center">POS Systems</h2>
           <span className="caption__underline"></span>
           <p className="text-white text-[20px] text-center mb-[40px]">
             Manage all your store’s activity with one single tool using your
@@ -36,7 +36,7 @@ const POS = () => {
           </p>
         </div>
         <div className="container flex md:flex-row flex-col gap-3 justify-around items-center">
-          <div className="lg:w-[600px] w-[350px]">
+          <div className="lg:w-[600px] sm:w-[350px]">
             {/* 3 paragraph mapping from index */}
             {about_pos.map((Link) => (
               <div

@@ -24,7 +24,7 @@ const Stamps = () => {
             src="/assets/img/icon/stamp.svg"
             alt={""}
           />
-          <h2 className="caption text-white">Loyalty Stamps</h2>
+          <h2 className="caption text-white text-center">Loyalty Stamps</h2>
           <span className="caption__underline"></span>
           <p className="text-white text-[20px] text-center mb-[40px]">
             Add the fun factor to the usual shopping experience. Motivate your
@@ -33,7 +33,7 @@ const Stamps = () => {
           </p>
         </div>
         <div className="container flex md:flex-row flex-col gap-3 justify-around items-center">
-          <div className="lg:w-[600px] w-[350px]">
+          <div className="lg:w-[600px] sm:w-[350px]">
             {/* 3 paragraph mapping from index */}
             {about_stamp.map((Link) => (
               <div

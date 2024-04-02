@@ -39,6 +39,7 @@ const Header = () => {
               alt={""}
               width={250}
               height={29}
+              priority={false}
             />
           </a>
         </div>
@@ -56,7 +57,7 @@ const Header = () => {
                 onClick={toggleMenu}
               >
                 <span className="flex gap-1 pb-1 bg-left-bottom bg-gradient-to-r from-gray-100 to-gray-100 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                  <Image src={link.icon} alt={"icon"} width={20} height={20} />
+                  <Image src={link.icon} alt={"icon"} width={20} height={20} style={{width:"20"}} />
                   <li className="font-extrabold">{link.label}</li>
                 </span>
               </Link>

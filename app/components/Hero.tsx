@@ -20,10 +20,10 @@ const Hero = () => {
             <span className="inline-block text-light-blue text-2xl font-bold">
               Convenience in one click
             </span>
-            <h1 className="text-white 2xl:text-[72px] lg:text-[65px] text-[50px] font-extrabold mb-[12px]">
+            <h1 className="text-white 2xl:text-[72px] lg:text-[65px] text-[40px] font-extrabold mb-[12px]">
               Every Retailer Tool Suite
             </h1>
-            <p className="text-white text-lg mb-[31px]">
+            <p className="text-white sm:text-lg text-[17px] mb-[31px]">
               Manage your inventory, ordering, sales, stores, employees,
               customer feedback, and even marketing, all with one single tool.
               <br />
