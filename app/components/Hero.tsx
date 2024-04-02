@@ -23,7 +23,7 @@ const Hero = () => {
             <h1 className="text-white 2xl:text-[72px] lg:text-[65px] text-[40px] font-extrabold mb-[12px]">
               Every Retailer Tool Suite
             </h1>
-            <p className="text-white sm:text-lg text-[17px] mb-[31px]">
+            <p className="text-white sm:text-lg text-base mb-[31px]">
               Manage your inventory, ordering, sales, stores, employees,
               customer feedback, and even marketing, all with one single tool.
               <br />
@@ -50,21 +50,21 @@ const Hero = () => {
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="md:pt-36"
         >
-          <div className="md:pt-36">
-            <Image
-              width={1000}
-              height={1000}
-              src={"/assets/img/hero/pos-illustration-header.png"}
-              alt={""}
-            />
-          </div>
+          <Image
+            width={1000}
+            height={1000}
+            src={"/assets/img/hero/pos-illustration-header.png"}
+            alt={""}
+          />
         </motion.div>
       </div>
       <div className="absolute flex top-0 left-0 lg:visible invisible">
         <Image
           width={300}
           height={300}
+          style={{width: "auto"}}
           src="/assets/img/hero/top-left-shape.png"
           alt=""
         />

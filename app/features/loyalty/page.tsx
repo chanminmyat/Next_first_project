@@ -6,13 +6,14 @@ export default function feature_Loyalty() {
     <main>
       <div className="relative bg-gradient-to-b from-[#0A0A37] to-[#1D204E] overflow-hidden">
         <div className=" flex lg:flex-row flex-col items-center justify-around">
-          <h2 className="w-1/2 text-white md:mb-[100px] mb-[50px] text-center font-bold md:text-5xl text-3xl">
+          <h2 className="w-1/2 text-white lg:mb-[100px] mb-[20px] text-center font-bold sm:text-5xl text-3xl">
             Loyalty Stamps
           </h2>
           <Image
-            width={1000}
+            width={500}
             height={500}
-            className="z-10 w-1/2"
+            style={{width:"auto"}}
+            className="z-10"
             src="/assets/img/gallery/stamps-visual.png"
             alt=""
           />
