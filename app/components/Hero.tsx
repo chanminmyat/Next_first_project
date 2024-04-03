@@ -9,7 +9,7 @@ const Hero = () => {
       id="home"
       className="bg-gradient-to-b from-[#0A0A37] to-[#1D204E] flex-col flex items-center"
     >
-      <div className="w-[100%] xl:ml-[400px] md:ml-[100px] flex justify-center md:flex-row flex-col gap-5 sm:px-0 px-5">
+      <div className="w-[100%] xl:ml-[400px]  md:ml-[100px] flex justify-center md:flex-row flex-col gap-5 sm:px-0 px-5">
         <motion.div
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -64,7 +64,7 @@ const Hero = () => {
         <Image
           width={300}
           height={300}
-          style={{width: "auto"}}
+          style={{width: "300px"}}
           src="/assets/img/hero/top-left-shape.png"
           alt=""
         />
