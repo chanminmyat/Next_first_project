@@ -9,18 +9,18 @@ const Hero = () => {
       id="home"
       className="bg-gradient-to-b from-[#0A0A37] to-[#1D204E] flex-col flex items-center"
     >
-      <div className="custom__container flex md:flex-row flex-col gap-5 sm:px-0 px-5">
+      <div className="w-[100%] xl:ml-[400px] md:ml-[100px] flex justify-center md:flex-row flex-col gap-5 sm:px-0 px-5">
         <motion.div
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="flex flex-col lg:pt-36 lg:pb-[80px] px-4 lg:px-0 sm:items-start sm:text-start items-center text-center"
+          className="lg:w-[500px] flex flex-col lg:pt-32 lg:pb-[80px] md:items-start md:text-start items-center text-center"
         >
           <div>
             <span className="inline-block text-light-blue text-2xl font-bold">
               Convenience in one click
             </span>
-            <h1 className="text-white 2xl:text-[72px] lg:text-[65px] text-[40px] font-extrabold mb-[12px]">
+            <h1 className="text-white 2xl:text-[72px] xl:text-[60px] text-[40px] font-extrabold mb-[12px]">
               Every Retailer Tool Suite
             </h1>
             <p className="text-white sm:text-lg text-base mb-[31px]">
@@ -50,11 +50,11 @@ const Hero = () => {
           initial={{ x: 200, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="md:pt-36"
+          className="lg:w-[auto] md:w-[1500px] xl:pt-0 lg:pt-20 pt-0"
         >
           <Image
             width={1000}
-            height={1000}
+            height={500}
             src={"/assets/img/hero/pos-illustration-header.png"}
             alt={""}
           />
