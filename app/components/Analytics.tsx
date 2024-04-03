@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { analysics } from "../constants/feature";
 
 const Analytics = () => {
   return (
@@ -33,75 +34,32 @@ const Analytics = () => {
             <span className="text-light-blue"> real-time.</span>
           </p>
         </div>
-        <div className="container flex md:flex-row-reverse flex-col gap-3 justify-around items-center">
-          <div className="lg:w-[600px] sm:w-[350px]">
-            {/* 1st para */}
-            <div className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center">
-              <div className="cat__img">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/assets/img/pictogram/data-accessibility-pictograme.svg"
-                  alt=""
-                />
+        <div className="flex md:flex-row-reverse flex-col gap-3 px-10 justify-around items-center">
+          <div className="lg:w-[600px] md:w-[500px] sm:w-[400px]">
+            {/* 3 paragraph mapping from feature */}
+            {analysics.map((Link) => (
+              <div
+                className="pb-[40px] flex md:flex-row flex-col md:items-start items-center"
+                key={Link.key}
+              >
+                <div className="cat__img">
+                  <Image width={100} height={100} src={Link.img} alt="" />
+                </div>
+                <div>
+                  <h5 className="text-dark-blue text-2xl mb-[14px] font-extrabold md:text-left text-center">
+                    {Link.title}
+                  </h5>
+                  <p className="about__text md:text-left text-center">
+                    {Link.p}
+                  </p>
+                  <ul className={`text-black ${Link.li1===""? "hidden":"block"} list-disc ml-[13px] text-[17px]`}>
+                    <li>{Link.li1}</li>
+                    <li>{Link.li2}</li>
+                    <li>{Link.li3}</li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h5 className="text-dark-blue md:text-2xl text-lg mb-[14px] font-semibold lg:text-left text-center">
-                  Data Accessibility
-                </h5>
-                <p className="about__text lg:text-left text-center">
-                  Our AI Marketing platform enhanced brand campaigns by
-                  providing behavioral analysis to target the right audience in
-                  real time.
-                </p>
-              </div>
-            </div>
-            {/* 2nd para */}
-            <div className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center">
-              <div className="cat__img">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/assets/img/pictogram/customer-identification-and-segmentation-pictograme.svg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h5 className="text-dark-blue md:text-2xl text-lg mb-[14px] font-semibold lg:text-left text-center">
-                  Customer identification & segmentation
-                </h5>
-                <p className="about__text lg:text-left text-center">
-                  {" "}
-                  Data identified and collected demographics' data points
-                  segmented by AI machine learning.
-                </p>
-              </div>
-            </div>
-            {/* 3rd para */}
-            <div className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center">
-              <div className="cat__img">
-                <Image
-                  width={100}
-                  height={100}
-                  src="/assets/img/pictogram/campaign-management-platform-pictograme.svg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <h5 className="text-dark-blue md:text-2xl text-lg mb-[14px] font-semibold lg:text-left text-center">
-                  Campaign Management Platform
-                </h5>
-                <p className="about__text lg:text-left text-center">
-                  Combine multiple engagement, game and reward mechanics with
-                  rich customer data to generate a brand new experience.
-                </p>
-                <ul className="text-black list-disc ml-[13px] text-[15px]">
-                  <li>Identify important trends in campaign performance</li>
-                  <li>Monitor ROI for every marketing dollar spent</li>
-                  <li>Real time consumer behavior</li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="w-1/2 flex-col flex items-center">
             <Image

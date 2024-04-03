@@ -1,4 +1,4 @@
-import { analytics } from "@/app/constants/feature";
+import { analytics_detail } from "@/app/constants/feature";
 import Image from "next/image";
 
 export default function feature_Analytics() {
@@ -6,13 +6,13 @@ export default function feature_Analytics() {
     <main>
       <div className="relative bg-gradient-to-b from-[#0A0A37] to-[#1D204E] overflow-hidden">
         <div className=" flex lg:flex-row flex-col items-center justify-around">
-          <h2 className="w-1/2 text-white lg:mb-[100px] mb-[20px] text-center font-bold sm:text-5xl text-3xl">
+          <h2 className="w-1/2 text-white lg:mb-[150px] mb-[20px] text-center font-bold sm:text-5xl text-3xl">
             Analytics & Marketing
           </h2>
           <Image
-            width={500}
-            height={500}
-            style={{width:"auto"}}
+            width={600}
+            height={600}
+            style={{width:"600px"}}
             className="z-10"
             src="/assets/img/gallery/analytics-visual.png"
             alt=""
@@ -42,7 +42,7 @@ export default function feature_Analytics() {
             </p>
           </div>
           <div className="container md:grid grid-cols-3 gap-4 flex-col lg:px-[100px] md:px-[50px] px-2">
-            {analytics.map((LINK) => (
+            {analytics_detail.map((LINK) => (
               <div className="flex-col flex items-center" key={LINK.key}>
                 <div className="w-[100%] max-w-[100px] min-w-[40px] max-h-[90px] lg:mx-[30px] mx-0 lg:mb-0 mb-2">
                   <Image width={100} height={100} src={LINK.img} alt="" />

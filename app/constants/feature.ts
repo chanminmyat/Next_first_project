@@ -1,4 +1,35 @@
+export const features = [
+    {href:'/#pos' ,key:'pos' , title:'POS System' , p:'A digital shopfront with a fast and easy checkout and billing process. No software installation needed.', img:'/assets/img/icon/pos.svg'},
+    {href:'/#clickncollect' ,key:'ecommerce' , title:"Click 'n Collect" , p:'Self-pick up incentivize shoppers to check other products and deals building or increasing loyalty.', img:'/assets/img/icon/click.svg'},
+    {href:'/#stamps' ,key:'stamps' , title:'Loyalty Stamps' , p:'Collect stamps in every purchase and earn even more with multiple in-app games. Encourage customers to return to the store.', img:'/assets/img/icon/stamp.svg'},
+    {href:'/#analytics' ,key:'analytics' , title:'Analytics & Marketing' , p:'Get all your data on real-time. Increase traffic, sales and revenue by launching successful and well-targeted campaigns.', img:'/assets/img/icon/analytics.svg'},
+]
+
 export const pos = [
+    {key:'para1',title:'Manage your inventory' , p:'Never run out of stock.', li1:'Track stock levels in real time', li2:'Receive automatic low stock alerts',img:'/assets/img/pictogram/manage-your-inventory-pictograme.svg'},
+    {key:'para2',title:'Build customer relationships' , p:'Keep customer coming back.', li1:'View customer purchase history & shopper profile', li2:'Run loyalty program to reward customers',img:'/assets/img/pictogram/build-customer-relationships-pictograme.svg'},
+    {key:'para3',title:'Sales Report' , p:'Track sales trends backed by data and react to changes promptly.', li1:'View current & historical revenue, average sale and profit', li2:'Determine best-selling items and categories', img:'/assets/img/pictogram/sales-report-pictograme.svg'},
+]
+
+export const ecommerce = [
+    {key:'para1',title:'Online Presence' , p:`Create a seamless experience for your local customers, shopping in person or online with our integrated "Click 'n Collect" mobile app solution. ` , li1:'Drive more sales with In-store pickup for online orders' , li2:'Highlight your products & deals to regular customers' , img:'/assets/img/pictogram/online-presence-pictograme.svg'},
+    {key:'para2',title:'Sync Online and POS' , p:'Never be oversold again.' , li1:'Automatically sync online and in-store inventory' , li2:'Sync orders, items, and inventory with your POS in real time' , img:'/assets/img/pictogram/sync-online-and-pos-pictograme.svg'},
+    {key:'para3',title:'Your E-space' , p:'Customize your online space to drive your customer experience' , li1:'Seamless setting of the online content & flagship items' , li2:'Personalize your own e-store with the best deals for your audience' , img:'/assets/img/pictogram/your-e-space-pictograme.svg'}
+]
+
+export const stamps = [
+    {key:'para1',title:'In-built loyalty program' , p:'Build a customer loyalty program straight from your point of sale with our integrated "Digital Stamps Loyalty" mobile app.' , li1:'Enroll and reward customers directly from your POS' , li2:'Increase repeat visits to your business - twice as likely' , img:'/assets/img/pictogram/in-built-loyalty-program-pictograme.svg'},
+    {key:'para2',title:'Branded Mini-Games / Survey' , p:'Thank your regulars with a fully digitalized and automatized customer loyalty program. ' , li1:'Replace your old paper punch cards with a digital loyalty stamps' , li2:'Real-time Stamps calculation & rewards progress tracker' , img:'/assets/img/pictogram/branded-mini-games-survey-pictograme.svg'},
+    {key:'para3',title:'Engaging Mini-Game and Surveys' , p:'Connect in a deeper level with your customers.' , li1:'Provide entertaining games which encourage them to come back to your store.' , li2:'Gather their feedback with interactive, out-of-the-ordinary surveys' , img:'/assets/img/pictogram/engaging-mini-game-and-surveys-pictogarame.svg'}
+]
+
+export const analysics = [
+    {key:'para1',title:'Data Accessibility' , p:'Our AI Marketing platform enhanced brand campaigns by providing behavioral analysis to target the right audience in real time. ' , li1:'' , li2:'' , img:'/assets/img/pictogram/data-accessibility-pictograme.svg'},
+    {key:'para2',title:'Customer identification & segmentation' , p:"Data identified and collected demographics' data points segmented by AI machine learning. " , li1:'' , li2:'' ,img:'/assets/img/pictogram/customer-identification-and-segmentation-pictograme.svg'},
+    {key:'para3',title:'Campaign Management Platform' , p:'Combine multiple engagement, game and reward mechanics with rich customer data to generate a brand new experience. ' , li1:'Identify important trends in campaign performance' , li2:'Monitor ROI for every marketing dollar spent', li3:'Real time consumer behavior' ,img:'/assets/img/pictogram/campaign-management-platform-pictograme.svg'}
+]
+
+export const pos_detail = [
     {key:'para1',title:'Fast checkout and billing process', p:'Use barcode scanners or customize your sale screen.', img:'/assets/img/features/fast-checkout.svg'},
     {key:'para2',title:'Go paperless or print receipts', p:'Without a worry about losing track of all your transactions.', img:'/assets/img/features/void-refund-discount.svg'},
     {key:'para3',title:'Voids, refunds & discounts supported', p:'Easy management from your same device.', img:'/assets/img/features/go-paperless.svg'},
@@ -10,7 +41,7 @@ export const pos = [
     {key:'para9',title:'Use your iPad or tablet', p:'Our system works on any tablet or iPad. Compatible with your current device.', img:'/assets/img/features/tablet.svg'}
 ]
 
-export const ecommerce = [
+export const ecommerce_detail = [
     {key:'para1',title:'Sell online from your POS', p:'Automatically sync online and in-person orders, items, and inventory from your POS.', img:'/assets/img/features/sell-online-from-your-pos.svg'},
     {key:'para2',title:'Drive your sales', p:'Guide your customers directly to the products you want them to see with special sections to highlight top sellers, new items, or deals.', img:'/assets/img/features/drive-your-sales.svg'},
     {key:'para3',title:'Get local to online', p:'Adding a seamless online shopping experience for your local customers without start-up costs.', img:'/assets/img/features/get-local-to-online.svg'},
@@ -19,7 +50,7 @@ export const ecommerce = [
     {key:'para6',title:'Enhance customer relationship', p:'Customer feedback by-product reviewing and satisfaction surveys from happy customers to increase consumer confidence and build buzz.', img:'/assets/img/features/enhance-customer-relationship.svg'}
 ]
 
-export const stamps = [
+export const stamps_detail = [
     {key:'para1',title:'Highly interactive app', p:'Designed to increase user retention rate.', img:'/assets/img/features/highly-interactive-app.svg'},
     {key:'para2',title:'Encourage customers to return', p:'Motivation to come back to the store to collect more stamps and get better deals and promotions.', img:'/assets/img/features/encourage-customers-to-return.svg'},
     {key:'para3',title:'Initiate collaborations with brands', p:'Obtain support from specific brands in exchange of them winning exposure on your store and turning users into promoters.', img:'/assets/img/features/initiate-collaborations-with-brands.svg'},
@@ -31,7 +62,7 @@ export const stamps = [
     {key:'para9',title:'Redeem store products with stamps', p:'Customers are motivated to earn more stamps to be able to redeem products they are interested in in your store. Or products they would not be able to get otherwise.', img:'/assets/img/features/products-with-stamps.svg'}
 ]
 
-export const analytics = [
+export const analytics_detail = [
     {key:'para1',title:'Highly secured cloud base', p:'Only you and the staff you select will have access to the data. Personalization on permission depending on staff roles.', img:'/assets/img/features/highly-secured-cloud-base.svg'},
     {key:'para2',title:'Right data, Right decisions', p:'Make the right decisions by having access to all the data you need. Influence shoppers’ actions in-store or in-app.', img:'/assets/img/features/right-data-right-decisions.svg'},
     {key:'para3',title:'Know your customers', p:'Capture customer history & details from online & in-store channels (top customers, sales history…).', img:'/assets/img/features/know-your-customers.svg'},
@@ -51,26 +82,3 @@ export const help = [
     {key:'q&a5',question:'Is your DSLA POS safe?' , answer:'Yes, all data transfer is encrypted with HTTPS & passwords are hashed pre-transfer. Users/devices’ access can be tuned from admin console only.'},
 ]
 
-export const about_pos = [
-    {key:'para1',title:'Manage your inventory' , p:'Never run out of stock.', li1:'Track stock levels in real time', li2:'Receive automatic low stock alerts',img:'/assets/img/pictogram/manage-your-inventory-pictograme.svg'},
-    {key:'para2',title:'Build customer relationships' , p:'Keep customer coming back.', li1:'View customer purchase history & shopper profile', li2:'Run loyalty program to reward customers',img:'/assets/img/pictogram/build-customer-relationships-pictograme.svg'},
-    {key:'para3',title:'Sales Report' , p:'Track sales trends backed by data and react to changes promptly.', li1:'View current & historical revenue, average sale and profit', li2:'Determine best-selling items and categories', img:'/assets/img/pictogram/sales-report-pictograme.svg'},
-]
-
-export const about_cNc = [
-    {key:'para1',title:'Online Presence' , p:`Create a seamless experience for your local customers, shopping in person or online with our integrated "Click 'n Collect" mobile app solution. ` , li1:'Drive more sales with In-store pickup for online orders' , li2:'Highlight your products & deals to regular customers' , img:'/assets/img/pictogram/online-presence-pictograme.svg'},
-    {key:'para2',title:'Sync Online and POS' , p:'Never be oversold again.' , li1:'Automatically sync online and in-store inventory' , li2:'Sync orders, items, and inventory with your POS in real time' , img:'/assets/img/pictogram/sync-online-and-pos-pictograme.svg'},
-    {key:'para3',title:'Your E-space' , p:'Customize your online space to drive your customer experience' , li1:'Seamless setting of the online content & flagship items' , li2:'Personalize your own e-store with the best deals for your audience' , img:'/assets/img/pictogram/your-e-space-pictograme.svg'}
-]
-
-export const about_stamp = [
-    {key:'para1',title:'In-built loyalty program' , p:'Build a customer loyalty program straight from your point of sale with our integrated "Digital Stamps Loyalty" mobile app.' , li1:'Enroll and reward customers directly from your POS' , li2:'Increase repeat visits to your business - twice as likely' , img:'/assets/img/pictogram/in-built-loyalty-program-pictograme.svg'},
-    {key:'para2',title:'Branded Mini-Games / Survey' , p:'Thank your regulars with a fully digitalized and automatized customer loyalty program. ' , li1:'Replace your old paper punch cards with a digital loyalty stamps' , li2:'Real-time Stamps calculation & rewards progress tracker' , img:'/assets/img/pictogram/branded-mini-games-survey-pictograme.svg'},
-    {key:'para3',title:'Engaging Mini-Game and Surveys' , p:'Connect in a deeper level with your customers.' , li1:'Provide entertaining games which encourage them to come back to your store.' , li2:'Gather their feedback with interactive, out-of-the-ordinary surveys' , img:'/assets/img/pictogram/engaging-mini-game-and-surveys-pictogarame.svg'}
-]
-
-export const about_analysics = [
-    {key:'para1',title:'Data Accessibility' , p:'Our AI Marketing platform enhanced brand campaigns by providing behavioral analysis to target the right audience in real time. ' , li1:'' , li2:'' , img:'/assets/img/pictogram/data-accessibility-pictograme.svg'},
-    {key:'para2',title:'Customer identification & segmentation' , p:"Data identified and collected demographics' data points segmented by AI machine learning. " , li1:'' , li2:'' ,img:'/assets/img/pictogram/customer-identification-and-segmentation-pictograme.svg'},
-    {key:'para3',title:'Campaign Management Platform' , p:'Combine multiple engagement, game and reward mechanics with rich customer data to generate a brand new experience. ' , li1:'Identify important trends in campaign performance' , li2:'Monitor ROI for every marketing dollar spent Real time consumer behavior' ,img:'/assets/img/pictogram/campaign-management-platform-pictograme.svg'}
-]

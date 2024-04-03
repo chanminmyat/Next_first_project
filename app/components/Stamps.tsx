@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { about_stamp } from "../constants/feature";
+import { stamps } from "../constants/feature";
 import Image from "next/image";
 
 const Stamps = () => {
@@ -32,23 +32,23 @@ const Stamps = () => {
             <span className="text-light-blue"> engage with the shop.</span>
           </p>
         </div>
-        <div className="container flex md:flex-row flex-col gap-3 justify-around items-center">
-          <div className="lg:w-[600px] sm:w-[350px]">
-            {/* 3 paragraph mapping from index */}
-            {about_stamp.map((Link) => (
+        <div className="flex md:flex-row-reverse flex-col gap-3 px-10 justify-around items-center">
+          <div className="lg:w-[600px] md:w-[500px] sm:w-[400px]">
+            {/* 3 paragraph mapping from feature */}
+            {stamps.map((Link) => (
               <div
-                className="pb-[40px] flex lg:flex-row flex-col lg:items-start items-center"
+                className="pb-[40px] flex md:flex-row flex-col md:items-start items-center"
                 key={Link.key}
               >
                 <div className="cat__img">
                   <Image width={100} height={100} src={Link.img} alt="" />
                 </div>
                 <div>
-                  <h5 className="text-light-blue md:text-2xl text-lg mb-[14px] font-semibold lg:text-left text-center">
+                  <h5 className="text-light-blue text-2xl mb-[14px] font-extrabold md:text-left text-center">
                     {Link.title}
                   </h5>
-                  <p className="cat__text lg:text-left text-center">{Link.p}</p>
-                  <ul className="text-white list-disc ml-[13px] text-[15px]">
+                  <p className="cat__text md:text-left text-center text-lg">{Link.p}</p>
+                  <ul className = {`text-white list-disc ml-[13px] text-[17px]`}>
                     <li>{Link.li1}</li>
                     <li>{Link.li2}</li>
                   </ul>

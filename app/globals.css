@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 .cat__img{
-    @apply w-[100%] max-w-[47px] min-w-[40px] lg:mx-[30px] mx-0 lg:mb-0 mb-2
+    @apply w-[100%] max-w-[47px] min-w-[40px] lg:mx-[30px] md:mx-[20px] mx-0 lg:mb-0 mb-2
 }
 
 .cat__cap{
-    @apply text-[#2b376e] md:text-2xl text-lg font-extrabold hover:no-underline hover:text-white
+    @apply text-[#2b376e] md:text-3xl text-2xl font-extrabold hover:no-underline hover:text-white
 }
 
 .cat__text{
-    @apply md:text-lg text-base text-white mb-[5px]
+    @apply text-lg text-white mb-[5px]
 }
 
 .about__text{
-    @apply md:text-lg text-base text-[#5e5e5e] mb-[5px]
+    @apply text-lg text-[#5e5e5e] mb-[5px]
 }
 
 .features{
-    @apply max-w-[500px] md:mb-[100px] mb-5
+    @apply max-w-[500px] md:mb-[50px] mb-5
 }
 
 .about__icon{

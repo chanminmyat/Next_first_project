@@ -1,4 +1,4 @@
-import { stamps } from "@/app/constants/feature";
+import { stamps_detail } from "@/app/constants/feature";
 import Image from "next/image";
 
 export default function feature_Loyalty() {
@@ -12,7 +12,7 @@ export default function feature_Loyalty() {
           <Image
             width={500}
             height={500}
-            style={{width:"auto"}}
+            style={{width:"500px"}}
             className="z-10"
             src="/assets/img/gallery/stamps-visual.png"
             alt=""
@@ -44,7 +44,7 @@ export default function feature_Loyalty() {
             </p>
           </div>
           <div className="container md:grid grid-cols-3 gap-4 flex-col lg:px-[100px] md:px-[50px] px-2">
-            {stamps.map((LINK) => (
+            {stamps_detail.map((LINK) => (
               <div className="flex-col flex items-center" key={LINK.key}>
                 <div className="w-[100%] max-w-[100px] min-w-[40px] max-h-[90px] lg:mx-[30px] mx-0 lg:mb-0 mb-2">
                   <Image width={100} height={100} src={LINK.img} alt="" />
