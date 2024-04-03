@@ -20,7 +20,7 @@ const Hero = () => {
             <span className="inline-block text-light-blue text-2xl font-bold">
               Convenience in one click
             </span>
-            <h1 className="text-white 2xl:text-[72px] xl:text-[60px] text-[40px] font-extrabold mb-[12px]">
+            <h1 className="text-white 2xl:text-[72px] xl:text-[60px] lg:text-[50px] text-[40px] font-extrabold mb-[12px]">
               Every Retailer Tool Suite
             </h1>
             <p className="text-white sm:text-lg text-base mb-[31px]">
