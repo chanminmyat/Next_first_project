@@ -58,7 +58,7 @@ export default function register() {
             <h2 className="caption text-dark-blue">Get Started</h2>
             <span className="caption__underline"></span>
           </div>
-          <div className="w-full h-[1000px] md:bg-bg_img bg-right bg-no-repeat bg-white z-10">
+          <div className="w-full h-[1000px] md:bg-bg_img bg-right bg-no-repeat bg-white z-10 sm:px-0 px-4">
             <div className="sm:w-[400px] w-[300px] md:ml-[250px] mx-auto mt-14 mb-3">
               <section className="flex flex-row">
                 <div>

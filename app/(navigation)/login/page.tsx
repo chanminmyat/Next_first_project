@@ -30,7 +30,8 @@ export default function login() {
         }),
       }
     );
-    console.log(res.json());
+    const result = res.json();
+    console.log(result)
     if (res.status == 200) {
       //window.location.href = "http://localhost:3000/"
       setMsg("Login Complete");
@@ -57,7 +58,7 @@ export default function login() {
             <h2 className="caption text-dark-blue">Login</h2>
             <span className="caption__underline"></span>
           </div>
-          <div className="w-full h-[700px] md:bg-bg_img bg-right bg-no-repeat bg-white">
+          <div className="w-full h-[700px] md:bg-bg_img bg-right bg-no-repeat bg-white sm:px-0 px-3">
             <div className="form mt-14 flex flex-col">
               <form onSubmit={handleSubmit} action="">
                 <div className="mb-4">

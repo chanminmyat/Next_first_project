@@ -55,7 +55,7 @@
 }
 
 .form{
-    @apply border-[1px] sm:w-[500px] lg:ml-[200px] mx-auto bg-white shadow-xl shadow-[#dcdcdc] pt-[50px] pb-[50px] px-[20px] rounded-lg
+    @apply border-[1px] sm:w-[500px] lg:ml-[200px] mx-auto bg-white shadow-xl shadow-[#dcdcdc] sm:pt-[50px] pt-[20px] sm:pb-[50px] pb-[20px] px-[20px] rounded-lg
 }
 
 .form__label{

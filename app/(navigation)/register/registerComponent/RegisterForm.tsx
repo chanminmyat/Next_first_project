@@ -61,7 +61,7 @@ const RegisterForm = () => {
   };
   return (
     <form>
-      <div className="mb-4">
+      <div className="sm:mb-4 mb-2">
         <label className="form__label" htmlFor="name">
           Business Name
         </label>
@@ -84,7 +84,7 @@ const RegisterForm = () => {
           <p className="text-red-500">Business Name is Required.</p>
         )}
       </div>
-      <div className="mb-4">
+      <div className="sm:mb-4 mb-2">
         <label className="form__label" htmlFor="email">
           Email
         </label>
@@ -110,7 +110,7 @@ const RegisterForm = () => {
           <p className="text-red-500">Enter valid Email.</p>
         )}
       </div>
-      <div className="mb-4">
+      <div className="sm:mb-4 mb-2">
         <label className="form__label" htmlFor="password">
           Password
         </label>
@@ -138,7 +138,7 @@ const RegisterForm = () => {
           </p>
         )}
       </div>
-      <div className="mb-4">
+      <div className="sm:mb-4 mb-2">
         <label className="form__label" htmlFor="confirmPassword">
           Confirm Password
         </label>
@@ -159,7 +159,7 @@ const RegisterForm = () => {
         )} */}
         {error && <p className="text-red-500">{error}</p>}
       </div>
-      <div className="mb-4">
+      <div className="sm:mb-4 mb-2">
         <label className="form__label" htmlFor="country">
           Country
         </label>
@@ -171,7 +171,7 @@ const RegisterForm = () => {
           <option value="UK">United Kingdom</option>
         </select>
       </div>
-      <div className="mb-4">
+      <div className="sm:mb-4 mb-2">
         <label className="form__label" htmlFor="language">
           Language
         </label>
@@ -218,7 +218,7 @@ const RegisterForm = () => {
         </p>
       )}
       {msg && <p className="text-red-500">{msg}</p>}
-      <div className="flex justify-end mt-4">
+      <div className="flex justify-end sm:mt-4 mt-2">
         <button
           onClick={handleSubmit(handleNext)}
           type="button"

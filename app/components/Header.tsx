@@ -39,7 +39,7 @@ const Header = () => {
               alt={""}
               width={250}
               height={29}
-              style={{width:"250px", height:"auto"}}
+              className="sm:w-[250px] w-[190px]"
               priority={true}
             />
           </a>
