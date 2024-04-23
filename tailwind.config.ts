@@ -15,6 +15,9 @@ const config: Config = {
         "light-blue": "#29ACE3",
         "dark-blue": "#2b376e",
       },
+      screens: {
+        'xs':'320px'
+      },
     },
   },
   plugins: [],

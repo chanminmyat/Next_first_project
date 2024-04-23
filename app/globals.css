@@ -63,7 +63,7 @@
 }
 
 .form__btn{
-    @apply bg-[#29ACE3] px-10 py-3 rounded-full text-[#ffffff] cursor-pointer font-bold hover:text-[#2b376e]
+    @apply bg-[#29ACE3] sm:px-10 xs:px-7 px-4 py-3 rounded-full text-[#ffffff] cursor-pointer font-bold hover:text-[#2b376e]
 }
 
 .step__icon{

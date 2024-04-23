@@ -3,12 +3,21 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 const RegisterForm = () => {
-  const { email, setEmail, businessName, setBusinessName, password, setPassword, count, setCount } = useStore();
+  const {
+    email,
+    setEmail,
+    businessName,
+    setBusinessName,
+    password,
+    setPassword,
+    count,
+    setCount,
+  } = useStore();
   const [spinner, setSpinner] = useState("none");
   const [msg, setMsg] = useState("");
-  const [error,setError] = useState("");
+  const [error, setError] = useState("");
   const [confirmPsw, setConfirmPsw] = useState("");
-  const confirmPassRef = useRef<HTMLInputElement>(null)
+  const confirmPassRef = useRef<HTMLInputElement>(null);
   const {
     register,
     handleSubmit,
@@ -16,21 +25,26 @@ const RegisterForm = () => {
     setFocus,
   } = useForm({ mode: "onSubmit" });
 
-  const handleKeyDown = (e:any) => {
-    if(e.key === 'Enter'){
-      console.log(e.currentTarget.id)
-      e.preventDefault()
-      switch(e.currentTarget.id) {
-        case 'name' : setFocus("email");break
-        case 'email': setFocus("password");break
-        case 'password' : confirmPassRef.current?.focus()
+  const handleKeyDown = (e: any) => {
+    if (e.key === "Enter") {
+      console.log(e.currentTarget.id);
+      e.preventDefault();
+      switch (e.currentTarget.id) {
+        case "name":
+          setFocus("email");
+          break;
+        case "email":
+          setFocus("password");
+          break;
+        case "password":
+          confirmPassRef.current?.focus();
       }
     }
-  }
+  };
 
   const handleNext = async () => {
-    if(password === confirmPsw){
-      setError("")
+    if (password === confirmPsw) {
+      setError("");
       const checkemailRequest = await fetch(
         `${process.env.NEXT_PUBLIC_PLATFORM_NESTJS_URL}/pos/accounts/check-account-exists`,
         {
@@ -45,19 +59,16 @@ const RegisterForm = () => {
       );
       setSpinner("inline");
       setTimeout(() => {
-        if(checkemailRequest.ok){
-          setCount(count+1)
-        }
-        else{
-          setMsg("Account with that email already exists.")
+        if (checkemailRequest.ok) {
+          setCount(count + 1);
+        } else {
+          setMsg("Account with that email already exists.");
         }
         setSpinner("none");
       }, 1000);
+    } else {
+      setError("Passwords do not match.");
     }
-    else{
-      setError("Passwords do not match.")
-    }
-    
   };
   return (
     <form>
@@ -122,7 +133,7 @@ const RegisterForm = () => {
           {...register("password", {
             required: true,
             onChange: (e) => {
-              setPassword(e.target.value)
+              setPassword(e.target.value);
             },
             pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}$/,
           })}
@@ -147,7 +158,7 @@ const RegisterForm = () => {
           type="password"
           id="confirmPassword"
           value={confirmPsw}
-          onChange={e=>setConfirmPsw(e.target.value)}
+          onChange={(e) => setConfirmPsw(e.target.value)}
           ref={confirmPassRef}
           onFocus={handleKeyDown}
           // {...register("confirmPassword", {
@@ -183,7 +194,7 @@ const RegisterForm = () => {
           disabled
         />
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center w-full">
         <input
           className="cursor-pointer"
           id="checkbox"
@@ -199,8 +210,8 @@ const RegisterForm = () => {
             target="_blank"
           >
             {" "}
-            Term of Use{" "}
-          </Link>
+            Term of Use
+          </Link>{" "}
           and have read and acknowledged
           <Link
             className="text-light-blue hover:text-blue-500"

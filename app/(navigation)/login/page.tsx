@@ -58,7 +58,7 @@ export default function login() {
             <h2 className="caption text-dark-blue">Login</h2>
             <span className="caption__underline"></span>
           </div>
-          <div className="w-full h-[700px] md:bg-bg_img bg-right bg-no-repeat bg-white sm:px-0 px-3">
+          <div className="w-full sm:h-[700px] h-[500px] md:bg-bg_img bg-right bg-no-repeat bg-white sm:px-0 px-3">
             <div className="form mt-14 flex flex-col">
               <form onSubmit={handleSubmit} action="">
                 <div className="mb-4">
@@ -101,7 +101,7 @@ export default function login() {
               </form>
             </div>
           </div>
-          <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px] mt-[-130px]">
+          <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px]">
             <Image
               width={100}
               height={100}

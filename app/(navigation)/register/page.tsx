@@ -55,11 +55,11 @@ export default function register() {
         </div>
         <div className="bg-white">
           <div className="flex flex-col items-center pt-[50px] mb-[-60px]">
-            <h2 className="caption text-dark-blue">Get Started</h2>
+            <h2 className="caption text-dark-blue text-center">Get Started</h2>
             <span className="caption__underline"></span>
           </div>
-          <div className="w-full h-[1000px] md:bg-bg_img bg-right bg-no-repeat bg-white z-10 sm:px-0 px-4">
-            <div className="sm:w-[400px] w-[300px] md:ml-[250px] mx-auto mt-14 mb-3">
+          <div className="w-full md:bg-bg_img bg-right bg-no-repeat bg-white z-10 sm:px-0 px-4">
+            <div className="sm:w-[400px] md:ml-[250px] mx-auto mt-14 mb-3">
               <section className="flex flex-row">
                 <div>
                   <div className="step__icon bg-light-blue">
@@ -118,7 +118,7 @@ export default function register() {
               )}
             </div>
           </div>
-          <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px] mt-[-130px] z-0">
+          <div className="w-[110%] mb-[-1px] mr-[0px] ml-[-5px] z-0">
             <Image
               width={100}
               height={100}

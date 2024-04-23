@@ -123,7 +123,7 @@ const StripeCheckoutForm = () => {
         <span className="underline"></span>
       </div>
       <div className="mb-3">
-        <div className="flex w-full text-xl font-bold">
+        <div className="flex w-full xs:text-xl text-lg font-bold">
           <h3 className="w-1/2">Monthly Fees</h3>
           <h3 className="w-1/2 text-end">£ 50</h3>
         </div>
@@ -135,8 +135,8 @@ const StripeCheckoutForm = () => {
       <div className="mb-1 text-red-500 text-sm font-bold">
         {message && <div id="payment-message">{message}</div>}
       </div>
-      <div className="flex sm:justify-end justify-center">
-        <button onClick={dec} type="button" className="form__btn text-lg">
+      <div className="flex sm:justify-end justify-center xs:flex-row flex-col ">
+        <button onClick={dec} type="button" className="form__btn text-lg mb-2 xs:mb-0">
           Previous
         </button>
         <button
